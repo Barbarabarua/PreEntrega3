@@ -1,0 +1,307 @@
+* {
+    margin: none;
+    padding: none;
+    font-style: none;
+    box-sizing: border-box;
+}
+
+
+/*HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-nav {
+    margin-top: 15px;
+    display: flex;
+    height: 5em;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 16px;
+}
+
+nav ul li {
+    float: left;
+    margin-top: 14px;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+}
+
+nav ul li a:hover{
+    background-color: rgba(68, 109, 155, 0.712);
+    transform: translate(15px, 15px);
+}
+/*FIN HEADER*/
+
+/*MEDIA QUERY HEADER*/
+  @media only screen and (min-width: 320px) and (max-width: 500px){
+    * {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    body {
+        justify-content: center;   
+    }
+    #aside {
+        display: none;
+    }
+    #mapa {
+        height: 120%;
+        width: 150%;
+    }
+    nav ul {
+        padding: 0;
+    }
+    nav ul li {
+        margin-top: 0;
+        float: inline-start;
+    }
+    nav ul li a {
+        font-size: 15px;
+        padding: 7px;
+    }
+    nav ul li a:hover{
+        transform: translate(2px, 2px);
+  }
+}
+
+/*MAIN*/
+main {
+    background-color: rgba(197, 197, 197, 0.863);
+}
+
+.txt-bienvenida {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 1%;
+    padding: 5%;
+    border: 1px solid grey;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.txt-bienvenida:hover {
+    background-color: black;
+    color: white;
+    transition: all 2s ease;
+}
+
+/*Contacto y aside*/
+section div h3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.section-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    margin:2%;
+}
+
+.section-item {
+  text-align: justify;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social-button {
+    display: inline-block;
+}
+/*FOOTER*/
+footer {
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+  
+.grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-auto-flow: row;
+}
+  
+.grid-container div ul li {
+    list-style: none;
+    display: inline-block;
+}
+  
+.grid-item a{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+  
+.social-button{
+    align-items: center;
+}
+
+/*FIN DE INDEX*/
+
+/*MEDIA QUERY INDEX*/
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      
+}
+@media (prefers-reduce-data:reduce){
+    body {
+        background-color: url(images/linkdin-img.png);
+        }
+    }
+
+
+
+
+/*Nosotros*/
+.grid-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+  
+  #iso9001 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 400px;
+  }
+
+  /*MEDIA QUERY NOSOTROS*/
+  @media only screen and (min-width: 320px) and (max-width: 500px){
+    .grid-nosotros {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-metalurgica {
+        height: auto;
+        width: auto;
+    }
+}
+
+/*CONTACTO*/
+.main-contacto {
+    display: flex;
+    align-items: flex-start;
+    padding: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.main-contacto {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+  }
+
+  .button-contacto {
+    display: inline-block;
+    margin: 8px;
+    
+  }
+
+  /*MEDIA QUERY CONTACTO*/
+  @media only screen and (min-width: 320px) and (max-width: 500px){
+    #main-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+        margin: 10px;
+    }
+    .mapa {
+        height: 100%;
+        width: 100%;
+    }
+  }
+
+
+  /*GALERIA*/
+  .main-galeria {
+    display: flex;
+    justify-content: center;
+  }
+  .grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.galeria-item {
+    padding: 8px;
+}
+
+.galeria-item:hover {
+    transform: scale(2);
+}
+
+/*MEDIA QUERY GALERIA*/
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    .grid-galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+    }
+
+    .galeria-item:hover {
+        transform: none;
+    }
+  }
+
+/*FIN GALERIA*/
+
+
+/*PRODUCTOS*/
+
+.section-productos {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/*MEDIA QUERY PRODUCTOS*/
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    .section-productos {
+        padding: 5px;
+        text-align: justify;
+    }
+}
+
+/*FIN PRODUCTOS*/
