@@ -1,31 +1,32 @@
 header {
     display: flex;
     justify-content: space-between;
-}
+    nav ul {
+        list-style: none;
+        display: inline-block;
+        padding: 16px;
+        li {
+            float: left;
+            margin-top: 14px;
+        }
+        a {
+            color: black;
+            font-weight: bold;
+            font-family: "Times New Roman", Times, serif;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 18px;
+        }
+        :hover {
+            background-color: rgba(68, 109, 155, 0.712);
+            transform: translate(15px, 15px);
+        }
+      }
+    }
 .logo-nav {
     margin-top: 15px;
     display: flex;
     height: 5em;
   }
   
-  nav ul {
-    list-style: none;
-    display: inline-block;
-    padding: 16px;
-    li {
-        float: left;
-        margin-top: 14px;
-    }
-    a {
-        color: black;
-        font-weight: bold;
-        font-family: "Times New Roman", Times, serif;
-        text-decoration: none;
-        font-size: 20px;
-        padding: 18px;
-    }
-    :hover {
-        background-color: rgba(68, 109, 155, 0.712);
-        transform: translate(15px, 15px);
-    }
-  }
+  
