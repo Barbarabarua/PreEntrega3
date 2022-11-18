@@ -1,0 +1,59 @@
+/*MEDIA HEADER*/
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    * {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    body {
+        justify-content: center;   
+    }
+    #aside {
+        display: none;
+    }
+    #mapa {
+        height: 120%;
+        width: 150%;
+    }
+    nav ul {
+            padding: 0;
+            li {
+                margin-top: 0;
+                float: inline-start;
+                a {
+                    font-size: 15px;
+                    padding: 7px;
+                    &:hover {
+                    transform: translate(2px, 2px);
+                }
+            }
+            }
+        }
+    }
+
+/*MEDIA QUERY INDEX*/
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+      }   
+}
+@media (prefers-reduce-data:reduce){
+    body {
+        background-color: url(images/linkdin-img.png);
+    }
+}
+    
+/*MEDIA QUERY NOSOTROS*/
+@media only screen and (min-width: 320px) and (max-width: 500px){
+    .grid-nosotros {
+            display: flex;
+            flex-direction: column;
+    }
+    .img-metalurgica {
+            height: auto;
+            width: auto;
+    }
+}
+

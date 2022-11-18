@@ -1,5 +1,23 @@
 {
   "devDependencies": {
+    "node-sass": "^8.0.0",
     "nodemon": "^2.0.20"
-  }
+  },
+  "name": "preentrega3barua",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barbarabarua/proyecto-alpromat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barbarabarua/proyecto-alpromat/issues"
+  },
+  "homepage": "https://github.com/Barbarabarua/proyecto-alpromat#readme",
+  "description": ""
 }
